@@ -19,14 +19,81 @@
         />
         <h2 class="nav_h2">Configurações</h2>
         <h2 class="nav_h2">Perfil</h2>
+        <div class="draw_menu">
+          <img src="assets/image/menu.png" alt="">
+        </div>
       </nav>
     </header>
     <section>
       <aside>
         <div class="a1">Tela Inicial</div>
-        <div class="a1">Usuários</div>
+        <div class="a2">Usuários</div>
       </aside>
-      <main></main>
+      <main id="main_div">
+        <div class="m1">
+          <h1>Novo Usuário</h1>
+          <div class="nome_div">
+            <p>Nome:</p>
+            <input
+              type="text"
+              name="Nome"
+              placeholder="    Informe seu nome:"
+              id="inp_nome"
+            />
+          </div>
+          <div class="row1">
+            <div class="cpf_div">
+              <p>CPF:</p>
+              <input
+                type="text"
+                name="cpf"
+                placeholder="   Informe seu CPF:"
+                id="inp_cpf"
+              />
+            </div>
+            <div class="adress_div">
+              <p>Endereço:</p>
+              <input
+                type="text"
+                name="adress"
+                placeholder="   Informe seu Endereço:"
+                id="inp_adress"
+              />
+            </div>
+            <div class="nivel_div">
+              <p>Nivel:</p>
+              <input type="text" name="nivel" id="inp_nivel" />
+            </div>
+          </div>
+          <div class="row2">
+            <div class="email_div">
+              <p>Email:</p>
+              <input
+                type="text"
+                name="email"
+                placeholder="   Informe seu Email:"
+                id="inp_email"
+              />
+            </div>
+            <div class="password_div">
+              <p>Senha:</p>
+              <input
+                type="text"
+                name="password"
+                placeholder="   Informe sua senha:"
+                id="inp_password"
+              />
+            </div>
+            <div class="status_div">
+              <p>Status:</p>
+              <input type="text" name="status" id="inp_status" />
+            </div>
+          </div>
+
+          <input type="button" value="Cancelar" class="btn1"  >
+          <input type="submit" value="Enviar" class="btn2">
+        </div>
+      </main>
     </section>
   </body>
 </html>
