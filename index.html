@@ -7,22 +7,42 @@
     <title>Formulário</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
+  <script type="text/javascript">
+    window.onload = function () {
+      document
+        .querySelector(".draw_menu")
+        .addEventListener("click", function () {
+          if (document.querySelector(" nav ul").style.display == "flex") {
+            document.querySelector(" nav ul").style.display = "none";
+          } else {
+            document.querySelector("nav ul").style.display = "flex";
+          }
+        });
+    };
+  </script>
   <body>
     <header id="h-nav">
-      <nav>
+      <div class="container-geral">
         <h1 id="nav_text">VideoIgniter</h1>
-        <input
-          type="text"
-          name=""
-          id="nav_text_box"
-          placeholder="  Pesquisar..."
-        />
-        <h2 class="nav_h2">Configurações</h2>
-        <h2 class="nav_h2">Perfil</h2>
-        <div class="draw_menu">
-          <img src="assets/image/menu.png" alt="">
-        </div>
-      </nav>
+        <nav>
+          <input
+            type="text"
+            name=""
+            id="nav_text_box"
+            placeholder="  Pesquisar..."
+          />
+
+          <div class="draw_menu">
+            <img src="assets/image/menu (1).png" alt="" />
+          </div>
+          <ul>
+            <li class="nav_h2">Configurações</li>
+            <li class="nav_h2">Perfil</li>
+            <li class="aside_options">Tela Inicial</li>
+            <li class="aside_options">Usuários</li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section>
       <aside>
@@ -90,8 +110,8 @@
             </div>
           </div>
 
-          <input type="button" value="Cancelar" class="btn1"  >
-          <input type="submit" value="Enviar" class="btn2">
+          <input type="button" value="Cancelar" class="btn1" />
+          <input type="submit" value="Enviar" class="btn2" />
         </div>
       </main>
     </section>

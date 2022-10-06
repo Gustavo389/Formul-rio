@@ -3,13 +3,27 @@ body {
   margin: 0;
 }
 #h-nav {
-  width: 100%;
-  height: 50px;
+  align-items: center;
   background-color: #222222;
   display: flex;
 }
+.container-geral{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.aside_options {
+  display: none;
+}
 nav {
   display: flex;
+  justify-content: flex-end;
   flex: 1;
   flex-direction: row;
   align-items: center;
@@ -157,7 +171,6 @@ aside {
   line-height: 1.5;
   border-radius: 0.25rem;
   margin-top: 10px;
-
 }
 .btn2 {
   float: right;
@@ -172,20 +185,32 @@ aside {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin-top: 10px;
   margin-right: 10px;
 }
-.draw_menu{
+.draw_menu {
   display: none;
 }
-@media (max-width:750px){
-  .draw_menu{
+@media (max-width: 750px) {
+  .draw_menu {
     display: flex;
     height: 30px;
+    margin-right: 20px;
     width: 30px;
   }
-  aside{
-    display:none;
+  aside {
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  header{
+    height: auto;
   }
 }
