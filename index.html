@@ -12,10 +12,15 @@
       document
         .querySelector(".draw_menu")
         .addEventListener("click", function () {
-          if (document.querySelector(" nav ul").style.display == "flex") {
-            document.querySelector(" nav ul").style.display = "none";
+          if (
+            document.querySelector(".container-geral nav ul").style.display ==
+            "flex"
+          ) {
+            document.querySelector(".container-geral nav ul").style.display =
+              "none";
           } else {
-            document.querySelector("nav ul").style.display = "flex";
+            document.querySelector(".container-geral nav ul").style.display =
+              "flex";
           }
         });
     };
@@ -24,24 +29,36 @@
     <header id="h-nav">
       <div class="container-geral">
         <h1 id="nav_text">VideoIgniter</h1>
-        <nav>
+
+        <div class="menu">
           <input
             type="text"
             name=""
             id="nav_text_box"
             placeholder="  Pesquisar..."
           />
+          <h3 class="font-options"><a href="#">Tela Inicial</a></h3>
 
-          <div class="draw_menu">
-            <img src="assets/image/menu (1).png" alt="" />
-          </div>
-          <ul>
-            <li class="nav_h2">Configurações</li>
-            <li class="nav_h2">Perfil</li>
-            <li class="aside_options">Tela Inicial</li>
-            <li class="aside_options">Usuários</li>
-          </ul>
-        </nav>
+          <h3 class="font-options"><a href="#">Usuários</a></h3>
+          <nav>
+            <div class="draw_menu">
+              <img src="assets/image/menu (1).png" alt="" />
+            </div>
+
+            <ul style="display: none">
+              <li class="nav_h2"><a href="#">Configurações</a></li>
+              <li class="nav_h2"><a href="#">Perfil</a></li>
+              <li class="nav_h2"><a href="#">Tela Inicial</a></li>
+              <li class="nav_h2"><a href="#">Usuários</a></li>
+              <input
+                type="text"
+                name=""
+                id="nav_input_draw"
+                placeholder="  Pesquisar..."
+              />
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <section>
@@ -109,9 +126,12 @@
               <input type="text" name="status" id="inp_status" />
             </div>
           </div>
-
-          <input type="button" value="Cancelar" class="btn1" />
+          
+          <input  type="button" value="Cancelar" class="btn1" />
+       
+        
           <input type="submit" value="Enviar" class="btn2" />
+        
         </div>
       </main>
     </section>
